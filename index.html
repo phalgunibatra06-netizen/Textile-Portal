@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ministry of Textiles — Beneficiary Portal</title>
+<link rel="stylesheet" href="c:\Users\kumar\OneDrive\Documents\UnifiedTextilePortal\UnifiedTextilePortal\css\styles.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="top-header">
+  <div class="logo-section">
+    <div class="brand-mark" data-brand-mark></div>
+    <div class="title">
+      <h1>Ministry of Textiles</h1>
+      <p>Government of India</p>
+    </div>
+  </div>
+  <div class="digital-india">
+    <span data-digital-india></span>
+  </div>
+</header>
+
+<div class="gov-bar">
+  <span class="flag-slot" data-flag></span>
+  Government of India · Ministry of Textiles
+</div>
+
+
+<!-- Main -->
+<main class="container landing">
+
+  <!-- Left: intro + role cards -->
+  <section class="left-panel">
+    <h2>Empowering India's Textile Ecosystem</h2>
+    <p class="lead">One place to discover schemes, benefits, registrations and training for
+      everyone in the textile value chain. Choose your category to see the schemes you've
+      availed and the schemes you can apply for.</p>
+
+    <div class="card-grid">
+
+      <a class="role-card" tabindex="0" data-goto="farmer" role="button" aria-label="Open Farmers dashboard">
+        <div class="role-illus"><span data-role-icon="farmer"></span></div>
+        <div class="role-body">
+          <h3>Farmers</h3>
+          <p>Support for cotton, jute and silk fibre-crop farmers.</p>
+          <span class="enter">Open dashboard →</span>
+        </div>
+      </a>
+
+      <a class="role-card" tabindex="0" data-goto="weaver" role="button" aria-label="Open Weavers dashboard">
+        <div class="role-illus"><span data-role-icon="weaver"></span></div>
+        <div class="role-body">
+          <h3>Weavers</h3>
+          <p>Handloom, yarn, welfare and marketing support.</p>
+          <span class="enter">Open dashboard →</span>
+        </div>
+      </a>
+
+      <a class="role-card" tabindex="0" data-goto="industrialist" role="button" aria-label="Open Industrialists dashboard">
+        <div class="role-illus"><span data-role-icon="industrialist"></span></div>
+        <div class="role-body">
+          <h3>Industrialists</h3>
+          <p>Manufacturing incentives, textile parks and upgradation.</p>
+          <span class="enter">Open dashboard →</span>
+        </div>
+      </a>
+
+      <a class="role-card" tabindex="0" data-goto="student" role="button" aria-label="Open Students dashboard">
+        <div class="role-illus"><span data-role-icon="student"></span></div>
+        <div class="role-body">
+          <h3>Students</h3>
+          <p>Skilling, stipend, certification and placement.</p>
+          <span class="enter">Open dashboard →</span>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- Right: login -->
+  <aside class="login-panel">
+    <h2>Beneficiary Login</h2>
+    <p class="sub">Sign in to your personalised dashboard and services.</p>
+
+    <div class="field">
+      <label for="roleSelect">I am a</label>
+      <select id="roleSelect">
+        <option value="farmer">Farmer</option>
+        <option value="weaver">Weaver</option>
+        <option value="industrialist">Industrialist</option>
+        <option value="student">Student</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="beneId">Beneficiary ID</label>
+      <input type="text" id="beneId" placeholder="Enter ID (or type 'demo')">
+    </div>
+    <div class="field">
+      <label for="benePass">Password</label>
+      <input type="password" id="benePass" placeholder="Enter password">
+    </div>
+
+    <button class="btn block" id="loginBtn">Login to dashboard</button>
+
+    <div class="login-links"><a href="#">Forgot password?</a> · <a href="#">Register</a></div>
+
+    <div class="demo-note">
+      <b>Demo mode:</b> this is a front-end prototype. Pick your category and click
+      <b>Login</b> (any ID/password works), or click a category card on the left to
+      go straight to that dashboard.
+    </div>
+
+    <div class="help-box">
+      <h4>Need assistance?</h4>
+      Email: support-textiles@gov.in<br>
+      Helpline: 1800-123-4567
+    </div>
+  </aside>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="#">Policies &amp; Guidelines</a>
+    <a href="#">Information Security</a>
+    <a href="#">Terms &amp; Conditions</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <p>© 2026 Ministry of Textiles, Government of India. All Rights Reserved.</p>
+</footer>
+
+<script src="js/data.js"></script>
+<script src="js/portal.js"></script>
+</body>
+</html>

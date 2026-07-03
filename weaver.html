@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weaver Dashboard — Ministry of Textiles</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body data-role="weaver">
+
+<!-- Header -->
+<header class="top-header">
+  <div class="logo-section">
+    <div class="brand-mark" data-brand-mark></div>
+    <div class="title">
+      <h1>Ministry of Textiles</h1>
+      <p>Government of India</p>
+    </div>
+  </div>
+  <div class="digital-india">
+    <span data-digital-india></span>
+    <span>Digital India</span>
+  </div>
+</header>
+
+<div class="gov-bar">
+  <span class="flag-slot" data-flag></span>
+  Government of India · Ministry of Textiles
+</div>
+<div class="thread" aria-hidden="true"></div>
+
+<!-- Sub navigation -->
+<nav class="subnav">
+  <div class="crumb"><a href="index.html">Home</a> › <span>Weaver Dashboard</span></div>
+  <button class="btn ghost" data-logout>Log out</button>
+</nav>
+
+<!-- Provisional-data note -->
+<div class="provisional" id="provNote">
+  <span>ℹ️</span>
+  <span><b>Prototype data.</b> Scheme names, benefits and eligibility shown here are
+  representative placeholders. Replace them with your official document wording in
+  <b>js/data.js</b> — the dashboards update automatically.</span>
+  <button class="x" id="provDismiss" aria-label="Dismiss">×</button>
+</div>
+
+<main class="container">
+
+  <!-- Beneficiary banner -->
+  <section class="bene-banner" id="beneBanner"></section>
+
+  <!-- Stats -->
+  <section class="stats" id="statsRow"></section>
+
+  <!-- Schemes availed -->
+  <section class="section">
+    <div class="section-head">
+      <h3>Schemes you've availed</h3>
+      <span class="count" id="availedCount"></span>
+    </div>
+    <div class="scheme-grid" id="availedGrid"></div>
+  </section>
+
+  <!-- Schemes available -->
+  <section class="section">
+    <div class="section-head">
+      <h3>Schemes you can avail</h3>
+      <span class="count" id="availableCount"></span>
+      <div class="search"><input type="search" id="schemeSearch" placeholder="Search schemes…" aria-label="Search available schemes"></div>
+    </div>
+    <div class="scheme-grid" id="availableGrid"></div>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="footer-links">
+    <a href="#">Policies &amp; Guidelines</a>
+    <a href="#">Information Security</a>
+    <a href="#">Terms &amp; Conditions</a>
+    <a href="#">Contact Us</a>
+  </div>
+  <p>© 2026 Ministry of Textiles, Government of India. All Rights Reserved.</p>
+</footer>
+
+<!-- Scheme details / apply modal -->
+<div class="modal-overlay" id="modalOverlay"></div>
+<!-- Toast -->
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="js/data.js"></script>
+<script src="js/portal.js"></script>
+</body>
+</html>
